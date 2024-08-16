@@ -274,7 +274,7 @@ body[class*=dark-ui].theme-colorfi-preview .mde-preview h5 .anchor {
 }
 body[class*=dark-ui].theme-colorfi-preview .mde-preview h6 {
   font-size: 1em;
-  color: #999999;
+  color: #a6a6a6;
 }
 body[class*=dark-ui].theme-colorfi-preview .mde-preview h6 .anchor {
   line-height: 1.1;

@@ -17,25 +17,25 @@
   
   // Headings
   $heading-color:               $theme-color;
-  $heading-color-alt:           darken($theme-color, 40%);
+  $heading-color-alt:           if($theme == dark, darken($theme-color, 35%), lighten($theme-color, 35%));
 
   // Links
   $link-color-normal:           $theme-link;
 
   // Rules
-  $rule-color:                  darken($theme-color-off, 20%);
+  $rule-color:                  if($theme == dark, darken($theme-color-off, 20%), lighten($theme-color-off, 20%));
   $rule-thickness:              borders.$small;
 
   // Blockquotes
-  $blockquote-color:            darken($theme-color-off, 40%);
+  $blockquote-color:            if($theme == dark, darken($theme-color-off, 40%), lighten($theme-color-off, 40%));
   $blockquote-border-color:     $theme-blockquote;
   $blockquote-border-width:     borders.$large;
 
   // Tables
-  $table-heading-background:    darken($theme-color-off, 5%);
-  $table-border-color:          darken($theme-color-off, 20%);
+  $table-heading-background:    if($theme == dark, darken($theme-color-off, 5%), lighten($theme-color-off, 5%));
+  $table-border-color:          if($theme == dark, darken($theme-color-off, 20%), lighten($theme-color-off, 5%));
   $table-border-width:          borders.$small;
-  $table-banding-background:    darken($theme-color-off, 3%);
+  $table-banding-background:    if($theme == dark, darken($theme-color-off, 3%), lighten($theme-color-off, 5%));
   $table-banding-on:            odd;
   $table-row-background:        $theme-color;
 
