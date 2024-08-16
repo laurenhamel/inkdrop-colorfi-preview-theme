@@ -435,7 +435,6 @@
     display: block;
     width: 100%;
     overflow: auto;
-    word-break: normal;
     word-break: keep-all;
   }
 
@@ -643,5 +642,12 @@
     z-index: 1;
     position: relative;
     border-color: @link-color-normal;
+  }
+}
+
+.mde-preview.print {
+  table {
+    overflow: hidden;
+    word-break: normal;
   }
 }
