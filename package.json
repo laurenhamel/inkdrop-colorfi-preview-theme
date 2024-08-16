@@ -5,11 +5,19 @@
   "theme": "preview",
   "repository": "https://github.com/laurenhamel/inkdrop-colorfi-preview-theme",
   "license": "MIT",
+  "scripts": {
+    "build": "npm run build:dark & npm run build:light",
+    "build:dark": "sass src/dark.scss:styles/dark.css",
+    "build:light": "sass src/light.scss:styles/light.css"
+  },
   "styleSheets": [
-    "colorfi-markdown.less",
-    "colorfi-markdown-dark.less"
+    "light.css",
+    "dark.css"
   ],
   "engines": {
-    "inkdrop": ">=3.12.0"
+    "inkdrop": "^5.x"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8"
   }
 }

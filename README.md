@@ -1,6 +1,6 @@
 # Colorfi Preview Theme
 
-A custom Markdown preview theme for [Inkdrop](https://www.inkdrop.info/).
+A custom Markdown preview theme for [Inkdrop](https://inkdrop.app).
 
  * `styles/colorfi-markdown.less` - Styles for light UI theme
  * `styles/colorfi-markdown-dark.less` - Styles for dark UI theme

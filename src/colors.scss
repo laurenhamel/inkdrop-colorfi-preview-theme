@@ -1,0 +1,94 @@
+/* #region Colors */
+
+$fuschia-light:         #FD3E81;
+$fuschia:               #D81159;
+$grey-dark:             #333333;
+$black-off:             #1f1f1f;
+$black:                 #000000;
+$gold:                  #FFBA08;
+$turquoise:             #05A8AA;
+$mint:                  #17BEBE;
+$teal:                  #218380;
+$seafoam:               #2CA58D;
+$blue:                  #064789;
+$white-off:             #dddddd;
+$white:                 #FFFFFF;
+$lime:                  #8EA604;
+$orange:                #E4572B;
+$orange-light:          #D76A03;
+$red:                   #BF3100;
+
+// --color-fg-default: #e6edf3;
+// --color-fg-muted: #848d97;
+// --color-fg-subtle: #6e7681;
+// --color-canvas-subtle: rgba(0, 0, 0, 0.1);
+// --color-border-default: #444c56;
+// --color-border-muted: #444c56b3;
+// --color-neutral-muted: rgba(110, 118, 129, 0.4);
+// --color-accent-fg: var(--primary-color, #2f81f7);
+// --color-accent-emphasis: #1f6feb;
+// --color-success-fg: #3fb950;
+// --color-success-emphasis: #238636;
+// --color-attention-fg: #d29922;
+// --color-attention-emphasis: #9e6a03;
+// --color-attention-subtle: rgba(187, 128, 9, 0.15);
+// --color-danger-fg: #f85149;
+// --color-danger-emphasis: #da3633;
+// --color-done-fg: #a371f7;
+// --color-done-emphasis: #8957e5;
+
+/* #endregion */
+
+/* #region Syntax */
+
+@mixin syntax($theme) {
+  $syntax-base-background:          if($theme == dark, #222222, #dddddd);
+  $syntax-base-gray:                if($theme == dark, #dddddd, #535353);
+  $syntax-base-gray-subtle:         if($theme == dark, #767676, #949494);
+  $syntax-base-gray-strong:         if($theme == dark, #eeeeee, #222222);
+  $syntax-base-orange:              if($theme == dark, #d89333, #e88501);
+  $syntax-base-green:               if($theme == dark, #85a300, #6d8600);
+  $syntax-base-green-subtle:        if($theme == dark, #6d8600, #85a300);
+  $syntax-base-red:                 if($theme == dark, #e64946, #dc322f);
+  $syntax-base-blue:                if($theme == dark, #6c9ef8, #446fbd);
+  $syntax-base-blue-subtle:         if($theme == dark, #8487c8, #6c71c4);
+  $syntax-base-purple:              if($theme == dark, #b77fdb, #8757ad);
+  $syntax-base-pink:                if($theme == dark, #d85896, #d33682);
+
+  & {
+    --color-syntax-background:                     #{$syntax-base-background};
+    --color-syntax-default:                        #{$syntax-base-gray};
+    --color-syntax-brackethighlighter-angle:       #{$syntax-base-gray};
+    --color-syntax-brackethighlighter-unmatched:   #{$syntax-base-red};
+    --color-syntax-carriage-return-bg:             #{rgba($syntax-base-red, 10%)};
+    --color-syntax-carriage-return-text:           #{$syntax-base-red};
+    --color-syntax-comment:                        #{$syntax-base-gray-subtle};
+    --color-syntax-constant-other-reference-link:  #{$syntax-base-purple};
+    --color-syntax-constant:                       #{$syntax-base-purple};
+    --color-syntax-entity-tag:                     #{$syntax-base-blue};
+    --color-syntax-entity:                         #{$syntax-base-orange};
+    --color-syntax-invalid-illegal-bg:             #{rgba($syntax-base-red, 10%)};
+    --color-syntax-invalid-illegal-text:           #{$syntax-base-red};
+    --color-syntax-keyword:                        #{$syntax-base-green};
+    --color-syntax-markup-bold:                    #{$syntax-base-gray-subtle};
+    --color-syntax-markup-changed-bg:              #{rgba($syntax-base-orange, 10%)};
+    --color-syntax-markup-changed-text:            #{$syntax-base-orange};
+    --color-syntax-markup-deleted-bg:              #{rgba($syntax-base-red, 10%)};
+    --color-syntax-markup-deleted-text:            #{$syntax-base-red};
+    --color-syntax-markup-heading:                 #{$syntax-base-pink};
+    --color-syntax-markup-ignored-bg:              #{rgba($syntax-base-blue-subtle, 10%)};
+    --color-syntax-markup-ignored-text:            #{$syntax-base-blue-subtle};
+    --color-syntax-markup-inserted-bg:             #{rgba($syntax-base-green-subtle, 10%)};
+    --color-syntax-markup-inserted-text:           #{$syntax-base-green-subtle};
+    --color-syntax-markup-italic:                  #{$syntax-base-blue};
+    --color-syntax-markup-list:                    #{$syntax-base-orange};
+    --color-syntax-meta-diff-range:                #{$syntax-base-orange};
+    --color-syntax-storage-modifier-import:        #{$syntax-base-blue-subtle};
+    --color-syntax-string-regexp:                  #{$syntax-base-green-subtle};
+    --color-syntax-string:                         #{$syntax-base-orange};
+    --color-syntax-sublimelinter-gutter-mark:      #{$syntax-base-gray-strong};
+    --color-syntax-variable:                       #{$syntax-base-gray};
+  }
+}
+
+/* #endregion */
