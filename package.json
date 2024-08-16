@@ -1,7 +1,7 @@
 {
   "name": "colorfi-preview",
   "description": "Colorfi preview theme for Inkdrop Markdown Editor",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "theme": "preview",
   "repository": "https://github.com/laurenhamel/inkdrop-colorfi-preview-theme",
   "license": "MIT",
