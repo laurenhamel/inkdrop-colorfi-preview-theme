@@ -344,19 +344,19 @@ body[class*=dark-ui].theme-colorfi-preview .mde-preview table {
 }
 body[class*=dark-ui].theme-colorfi-preview .mde-preview table th {
   font-weight: bold;
-  background-color: #d0d0d0;
+  background-color: black;
 }
 body[class*=dark-ui].theme-colorfi-preview .mde-preview table th,
 body[class*=dark-ui].theme-colorfi-preview .mde-preview table td {
   padding: 6px 13px;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #444444;
 }
 body[class*=dark-ui].theme-colorfi-preview .mde-preview table tr {
-  background-color: #FFFFFF;
-  border-top: 1px solid #aaaaaa;
+  background-color: #1a1a1a;
+  border-top: 1px solid #444444;
 }
 body[class*=dark-ui].theme-colorfi-preview .mde-preview table tr:nth-child(odd) {
-  background-color: #d5d5d5;
+  background-color: #111111;
 }
 body[class*=dark-ui].theme-colorfi-preview .mde-preview img {
   max-width: 100%;

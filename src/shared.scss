@@ -32,12 +32,12 @@
   $blockquote-border-width:     borders.$large;
 
   // Tables
-  $table-heading-background:    if($theme == dark, darken($theme-color-off, 5%), lighten($theme-color-off, 5%));
-  $table-border-color:          if($theme == dark, darken($theme-color-off, 20%), lighten($theme-color-off, 5%));
+  $table-heading-background:    if($theme == dark, darken($theme-color-off, 90%), lighten($theme-color-off, 90%));
+  $table-border-color:          if($theme == dark, darken($theme-color-off, 60%), lighten($theme-color-off, 60%));
   $table-border-width:          borders.$small;
-  $table-banding-background:    if($theme == dark, darken($theme-color-off, 3%), lighten($theme-color-off, 5%));
+  $table-banding-background:    if($theme == dark, darken($theme-color-off, 80%), lighten($theme-color-off, 80%));
   $table-banding-on:            odd;
-  $table-row-background:        $theme-color;
+  $table-row-background:        if($theme == dark, darken($theme-color, 90%), lighten($theme-color, 90%));
 
   // Code
   $code-color:                  $theme-code;
