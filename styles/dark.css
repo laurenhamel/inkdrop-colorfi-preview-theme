@@ -364,7 +364,6 @@ body[class*=dark-ui].theme-colorfi-preview .mde-preview img {
   background-color: #fff;
 }
 body[class*=dark-ui].theme-colorfi-preview .mde-preview code {
-  color: #D81159;
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
@@ -372,6 +371,9 @@ body[class*=dark-ui].theme-colorfi-preview .mde-preview code {
   font-size: 85%;
   background-color: var(--color-syntax-background);
   border-radius: 3px;
+}
+body[class*=dark-ui].theme-colorfi-preview .mde-preview code:not(pre code) {
+  color: #D81159;
 }
 body[class*=dark-ui].theme-colorfi-preview .mde-preview code:before,
 body[class*=dark-ui].theme-colorfi-preview .mde-preview code:after {
